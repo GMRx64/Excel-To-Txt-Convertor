@@ -1,0 +1,220 @@
+{% extends 'base.html'%}
+{%block css%}
+<link rel="stylesheet" href="{{url_for('static' , filename='/css/index.css')}}">
+{%endblock%}
+{%block title%}Excel to Txt Converter{%endblock%}
+{%block content%}
+<div class="title">
+    <h4>Excel to Txt Converter</h4>
+</div>
+<div class="sub">
+    <h6>This online Excel to Txt file converter free and accurately converts excel files to text files.</h6>
+</div>
+<div class="main-content-outbox">
+    <div class="main-content-inbox">
+        <div class="content">
+            <form action="">
+                <input type="file">
+            </form>
+        </div>
+    </div>
+</div>
+<div class="button-box">
+    <button>Convert To Txt</button>
+</div>
+<div class="about-converter-box">
+    <div class="about-content-box">
+        <h1 align="center">Excel to Text (TXT) Converter</h1>
+        <p>Excel to Text is a tool used to convert Excel spreadsheet files (.xlsx, .xls) into plain text (.txt) files.
+            It extracts the data stored in worksheets and converts it into a readable text format. Users can upload an
+            Excel file, select a worksheet or conversion format, and download the resulting TXT file.</p>
+        <h1>How to Convert Excel to Text?</h1>
+        <p>To convert your Excel documents into TXT files, follow these steps:</p>
+        <ol>
+            <li>Upload, Drag & Drop, or Select your Excel file (.xlsx or .xls) into the input box.</li>
+            <li>Select the <b>worksheet/sheet</b> you want to convert, if the workbook contains multiple sheets.</li>
+            <li>Choose the desired text format or delimiter, such as <b>Tab</b>,<b>Comma</b>,<b> or Space</b> .</li>
+            <li>Configure formatting options if necessary.</li>
+            <li>Click on the <b>Convert to TXT</b> button to instantly convert and download your file.</li>
+        </ol>
+        <p>Your Excel data will be converted into a TXT file within seconds. You can then open the resulting file using
+            Notepad, Notepad++, VS Code, or any other text editor.</p>
+        <h1>Why should I use this Excel to TXT converter?</h1>
+        <p>There are many ways to export Excel data as text, but our tool provides convenient features that make the
+            conversion process simple, fast, and accessible.</p>
+        <h3>100% Free to use</h3>
+        <p>Our Excel to TXT converter is completely free to use. You don't need to purchase expensive software or create
+            an account to convert your Excel files. Simply upload your spreadsheet and start the conversion process.</p>
+        <h3>Multiple Excel Formats</h3>
+        <p>The converter supports commonly used Excel spreadsheet formats, including:
+        <ol>
+            <li>.XLSX</li>
+            <li>.XLS</li>
+            <li>.XLSM (optional support)</li>
+            <li>Excel workbooks containing multiple worksheets</li>
+        </ol>
+        </p>
+        <p>This allows users to convert data from both modern and older Excel files into plain text.</p>
+        <h3>Worksheet Selection</h3>
+        <p>An Excel workbook can contain multiple worksheets. Our tool allows you to select the specific worksheet you
+            want to convert.
+
+            For example:
+        <ul>
+            <li>Sheet1 → Convert to TXT</li>
+            <li>Sheet2 → Convert to TXT</li>
+            <li>Sheet3 → Convert to TXT</li>
+        </ul>
+        </p>
+        <p>This prevents unnecessary sheets from being included in the output.</p>
+        <h3>Multiple Output Formats</h3>
+        <p>Users can choose how the Excel data should be separated in the TXT file. Available options can include:
+        <ul>
+            <li>Tab-separated</li>
+            <li>Comma-separated</li>
+            <li>Space-separated</li>
+            <li>Pipe-separated (|)</li>
+            <li>Custom delimiter</li>
+        </ul>
+        </p>
+        <p>This makes the converted TXT file suitable for different applications and data-processing requirements.</p>
+        <h3>Multiple Input Methods</h3>
+        <p>Our Excel to TXT converter provides convenient ways to upload files:
+        <ul>
+            <li>Select an Excel file using the <b>Upload</b> button.</li>
+            <li><b>Drag</b> and <b>drop</b> an Excel file into the input area.</li>
+            <li>Select another Excel file after completing a conversion.</li>
+        </ul>
+        </p>
+        <p>This provides a simple and beginner-friendly conversion experience.</p>
+        <h3>Fast Conversion</h3>
+        <p>The converter processes Excel spreadsheets quickly. After uploading the workbook and selecting the required
+            options, click <b>Convert to TXT</b> to generate the output file.
+
+            The conversion time depends on the size of the Excel workbook and the amount of data it contains.</p>
+
+        <h3>Data Preservation</h3>
+        <p>The converter preserves the actual cell data while converting the spreadsheet into plain text.
+
+            For example, an Excel table such as:
+        <table>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <tr>
+                <td>Rahul</td>
+                <td>22</td>
+                <td>Delhi</td>
+            </tr>
+            <tr>
+                <td>Priya</td>
+                <td>24</td>
+                <td>Mumbai</td>
+            </tr>
+        </table>
+        </p>
+        <p>Can be converted into tab-separated text such as:</p>
+        <p style="display:inline ; gap :20px;"> Name Age City <br>
+            Rahul 22 Delhi <br>
+            Priya 24 Mumbai</p><br><br>
+
+        <p>The resulting TXT file can then be opened or processed by virtually any text editor or programming
+            environment.</p>
+        <h3>Large File Support</h3>
+        <p>The converter can be designed to handle both small and relatively large Excel spreadsheets. Users can convert
+            spreadsheets containing hundreds or thousands of rows without manually copying the information.
+
+            The maximum supported file size can depend on the application's configuration and available system
+            resources.</p>
+        <h3>No Manual Copy-Paste Required</h3>
+        <p>Manually copying thousands of Excel cells into Notepad can be time-consuming and may result in missing or
+            incorrectly arranged data.
+
+            With an Excel to TXT converter, the entire worksheet can be processed automatically with just a few clicks.
+        </p>
+        <h3>FAQs</h3>
+        <p>Here are some commonly asked questions about Excel to TXT converters.</p>
+        <h3>How do I convert Excel to TXT?</h3>
+        <p>Follow these steps:
+        <ol>
+            <li>Open an Excel to TXT converter.</li>
+            <li>Upload your .xlsx or .xls file.</li>
+            <li>Select the worksheet you want to convert.</li>
+            <li>Choose a delimiter or text format.</li>
+            <li>Click <b>Convert to TXT</b>.</li>
+            <li>Download the generated TXT file.</li>
+        </ol>
+        </p>
+        <h3>Can I convert XLSX to TXT?</h3>
+        <p>Yes. XLSX files can be converted into plain TXT files by extracting the cell data from the spreadsheet and
+            writing it into a text-based format.</p>
+        <h3>Can I convert XLS to TXT?</h3>
+        <p>Yes. Older Excel .xls files can also be converted to TXT when the converter supports the XLS format.</p>
+        <h3>Can I convert a specific Excel sheet to TXT?</h3>
+        <p>Yes. If your workbook contains multiple worksheets, you can select the particular sheet that you want to
+            convert instead of converting the entire workbook.</p>
+        <h3>How do I convert Excel to TXT without opening Excel?</h3>
+        <p>You can use an online Excel to TXT converter. Upload the Excel file, select the required options, and
+            download the generated TXT file without opening Microsoft Excel.</p>
+        <h3>Can Excel formatting be preserved in TXT?</h3>
+        <p>TXT is a plain-text format, so advanced Excel formatting such as colors, fonts, borders, formulas, charts,
+            and cell styling cannot be preserved in the same way as an Excel file.
+
+            However, the converter can preserve the actual cell values, row structure, and column arrangement using
+            appropriate delimiters.</p>
+        <h3>What is the purpose of converting Excel to TXT?</h3>
+        <p>Excel files are commonly converted to TXT when spreadsheet data needs to be used by:
+        <ul>
+            <li>Text editors</li>
+            <li>Programming applications</li>
+            <li>Data-processing systems</li>
+            <li>Command-line tools</li>
+            <li>Legacy applications</li>
+            <li>Database import systems</li>
+            <li>Scripts and automation tools</li>
+        </ul>
+        </p>
+        <h3>Is there a free Excel to TXT converter?</h3>
+        <p>Yes. An Excel to TXT converter can be provided as a completely free tool without requiring users to install
+            Microsoft Excel or create an account.</p>
+    </div>
+</div>
+<div class="footer">
+    <footer>
+        <div>
+            <h3>Excel to Text Converter</h3>
+            <p>We present an online OCR (Optical Character Recognition) <br> service to extract text from images.</p>
+        </div>
+        <div>
+            <h3>Other Tools</h3>
+            <ul>
+                <li>Batch Image To Text — New</li>
+                <li>Jpg To Word</li>
+                <li>Pdf To Text</li>
+                <li>Pdf To Word</li>
+                <li>Text To PDF</li>
+                <li>Text To Word</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Quick Links</h3>
+            <ul>
+                <li>Blogs</li>
+                <li>Privacy Policy</li>
+                <li>Refund Policy</li>
+                <li>Terms & Conditions</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Resources</h3>
+            <ul>
+                <li>Premium Plan</li>
+                <li>API Plan</li>
+                <li>API Documentation</li>
+                <li>JPG to Excel API Docs</li>
+            </ul>
+        </div>
+    </footer>
+</div>
+{%endblock%}
