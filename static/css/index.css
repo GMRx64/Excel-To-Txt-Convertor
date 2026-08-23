@@ -52,6 +52,7 @@
     align-items:center;
 }.button-box button{
     padding: 2vh 3vw;
+    margin-right: 20px;
     border: none;
     border-radius: 13px;
     cursor: pointer;
@@ -59,6 +60,16 @@
     background-color: rgba(40, 40, 134, 0.786);
     color: white;
     font-size: 20px;
+}.button-box input{
+    padding: 2vh 3vw 2vh 1vw;
+    margin-right: 2vw ;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow:5px 5px 30px 5px rgb(233, 224, 224);
+}.button-box input:focus{
+    outline: none;
+    border: none;
 }.about-converter-box{
     margin-top: 40px;
     height: 550vh;

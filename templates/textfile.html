@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+{%block css%}
+<link rel="stylesheet" href="{{url_for('static' , filename='/css/testfile.css')}}">
+{%endblock%}
+{%block title%}Excel to Txt Converter{%endblock%}
+{%block content%}
+<div>
+    {%for i in dataframe.columns%}
+        {%if(i == "A/C NO." or i == 'AMOUNT')%}
+        {{i}}
+        {%endif%}
+    {%endfor%}
+</div>
+{%endblock%}

@@ -10,18 +10,19 @@
 <div class="sub">
     <h6>This online Excel to Txt file converter free and accurately converts excel files to text files.</h6>
 </div>
-<div class="main-content-outbox">
-    <div class="main-content-inbox">
-        <div class="content">
-            <form action="">
-                <input type="file">
-            </form>
+<form action="{{url_for('main')}}" method="POST" id="form" enctype="multipart/form-data">
+    <div class="main-content-outbox">
+        <div class="main-content-inbox">
+            <div class="content">
+                <input type="file" name="file" id="input" accept=".xls, .xlsx, application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" required>   
+            </div>
         </div>
     </div>
-</div>
-<div class="button-box">
-    <button>Convert To Txt</button>
-</div>
+    <div class="button-box">
+        <input type="text" placeholder="Enter Narration here" name="narration" required>
+        <button type="submit" id="convertbtn">Convert To Txt</button>
+    </div>
+</form>
 <div class="about-converter-box">
     <div class="about-content-box">
         <h1 align="center">Excel to Text (TXT) Converter</h1>
@@ -217,4 +218,7 @@
         </div>
     </footer>
 </div>
+{%endblock%}
+{%block js%}
+<script src="/static/js/index.js"></script>
 {%endblock%}
