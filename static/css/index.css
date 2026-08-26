@@ -149,4 +149,6 @@
     cursor: pointer;
 }.footer li:hover{
     color: #ffff;
+}.footer a{
+    text-decoration: none;
 }
