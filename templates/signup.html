@@ -1,0 +1,67 @@
+{%extends 'base.html' %}
+{%block title%}Signup{%endblock%}
+{%block css%} <link rel="stylesheet" href="/static/css/signup.css"> {%endblock%}
+{%block content %}
+   <div class="outer_container">
+    <div class="left_container">
+    </div>
+    <div class="right_container">
+        <div class="right_container_content">
+            <h2 align="center">Create Account</h2>
+            <form action="{{url_for('signup')}}" method="post">
+                <div class="form-content">
+                    <h2 align='center'>Signup to Get Started</h2>
+                    <label for="">Username</label>
+                    <input type="text" placeholder="Enter your username" name="username" required>
+                    <h5>
+                        {% with errors = get_flashed_messages(category_filter=["user_email_error"]) %}
+                    {% if errors %}
+                        {{ errors[0] }}
+                    {% endif %}
+                    {% endwith %}
+                    </h5>
+                    <label for="">Email</label>
+                    <input type="email" placeholder="email: abc@gmail.com" name="email" required>
+                    <h5>
+                    {% with errors = get_flashed_messages(category_filter=["user_email_error"]) %}
+                    {% if errors %}
+                        {{ errors[0] }}
+                    {% endif %}
+                    {% endwith %}
+                    </h5>
+                    <label for="">Password</label>
+                    <input type="password" placeholder="Enter your password" name="password" required>
+                    <h5>
+                        {%  with errors = get_flashed_messages(category_filter=["pass_error"]) %}
+                        {% if errors %}
+                            {{ errors[0] }}
+                        {% endif %}
+                        {% endwith %}
+                    </h5>
+                    <label for="">Confirm Password</label>
+                    <input type="password" placeholder="Confirm your password" name="cnfrm_password" required>
+                    <h5>
+                        {% with errors = get_flashed_messages(category_filter=["pass_error"]) %}
+                        {% if errors %}
+                            {{ errors[0] }}
+                        {% endif %}
+                        {% endwith %}
+                    </h5>
+                    <div class="inp_extra">
+                        <div class="remMe">
+                            <input type="checkbox" name="chkbox">
+                            <h3>I agree to terms and conditions</h3>
+                        </div>
+                        <div class="frgtpass">
+                            <a href="">Forget Password?</a>
+                        </div>
+                    </div>
+                    <button name="btn" class="btn">Create Account</button>
+                    <h4>Already Have an Account?<span><a href="{{url_for('authentication')}}" id="btn">SignIn</a></span></h4>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{%endblock%}

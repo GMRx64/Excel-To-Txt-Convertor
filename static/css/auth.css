@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.outer_container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}.left_container{
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.left_container_content{
+    height: 85vh;
+    width: 40vw;
+}.left_container h2{
+    font-size: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 30px;
+}.left_container form{
+    height: 76vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5vw;
+    box-shadow: 5px 5px 30px 5px rgb(233, 224, 224); 
+    border-radius: 20px;
+}.form-content{
+    height: 65vh;
+    width: 26vw;
+    position: absolute;
+}.form-content h2{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+}.form-content input{
+    position: relative;
+    border: none;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    padding: 2.5vh 16vw 2.5vh 1vw;
+    border-radius: 13px;
+    box-shadow: 5px 5px 30px 5px rgb(233, 224, 224);
+}.form-content input:focus{
+    outline: none;
+    border: none;
+}.inp_extra{
+    height: 8vh;
+    width: 26vw;
+    display: flex;
+}.remMe{
+    height: 8vh;
+    width: 13vw;
+    display: flex;
+    align-items: center;
+}.remMe h3{
+    font-size: 17px;
+    margin-bottom: 1vh;
+    margin-left: 0.2vw;
+}
+.frgtpass{
+    height: 8vh;
+    width: 13vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}.frgtpass a{
+    margin-bottom: 0.5vh;
+}.form-content .btn {
+    padding: 1.5vh 11vw;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow:5px 5px 30px 5px rgba(40, 40, 134, 0.286);
+    background-color: rgba(40, 40, 134, 0.786);
+    color: white;
+    font-size: 30px;
+}.form-content h4{
+    font-size: 21px;
+    margin-bottom: 1vh;
+    margin-top: 3vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}.logos{
+    height: 5vh;
+    width: 26vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+    gap: 1vw;
+}.logos img{
+    height: 3.3vh;
+    width: 1.6vw;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 10px 5px 30px 15px rgb(233, 224, 224);
+}.right_container{
+    height: 100vh;
+    width: 50vw;
+    background-image: url('/static/images/login.jpg');
+    background-size:cover;
+    background-position-x: center;
+}.signupbtn{
+    height: 4vh;
+    width: 26vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}.signupbtn a{
+    padding: 1vh 1vw;
+    border: none;
+    border-radius: 4px;
+    margin-right: 0.4vw;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow:2px 2px 5px 2px rgba(46, 46, 101, 0.286);
+    background-color: rgb(77, 77, 98);
+    color: white;
+    font-size: 14px;
+}.signupbtn a:hover{
+    color: white;
+    background-color: rgb(37, 37, 242);
+}
+
+span{
+    height: 1vh;
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

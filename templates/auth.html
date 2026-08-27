@@ -1,0 +1,63 @@
+{%extends 'base.html'%}
+{%block css%} <link rel="stylesheet" href="/static/css/auth.css"> {%endblock%}
+{%block title%}Login/Signup{%endblock%}
+{%block content%}
+<div class="outer_container">
+    <div class="left_container">
+        <div class="left_container_content">
+            <h2 align="center">Login Form</h2>
+            <form action="" method="post">
+                <div class="form-content">
+                    <h2 align='center'>Log In into Account</h2>
+                    <input type="email" placeholder="email: abc@gmail.com" name="email" required>
+                    {% with errors = get_flashed_messages(category_filter=['email_err']) %}
+                    {% if errors %}
+                        <span>{{ errors[0] }}</span>
+                    {% endif %}
+                    {% endwith %}
+                    {% with errors = get_flashed_messages(category_filter=['signup_err']) %}
+                    {% if errors %}
+                        <span>{{ errors[0] }}</span>
+                    {% endif %}
+                    {% endwith %}
+                    <input type="password" placeholder="Enter password here" name="password" required>
+                    {% with errors = get_flashed_messages(category_filter=['pass_err']) %}
+                    {% if errors %}
+                        <span>{{ errors[0] }}</span>
+                    {% endif %}
+                    {% endwith %}
+                    {% with errors = get_flashed_messages(category_filter=['signup_err']) %}
+                    {% if errors %}
+                        <span>{{ errors[0] }}</span>
+                    {% endif %}
+                    {% endwith %}
+                    <div class="inp_extra">
+                        <div class="remMe">
+                            <input type="radio" name="radio">
+                            <h3>Remember Me</h3>
+                        </div>
+                        <div class="frgtpass">
+                            <a href="">Forget Password?</a>
+                        </div>
+                    </div>
+                    <button name="btn" class="btn">Login</button>
+                    <h4 align="center">Other Ways to Login</h4>
+                    <div class="logos">
+                        <img src="/static/images/google.jpg" alt="">
+                        <img src="/static/images/fb.png" alt="">
+                        <img src="/static/images/apple.png" alt="">
+                    </div>
+                    <div class="signupbtn">
+                        <a href="{{url_for('signup')}}">Signup</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="right_container"></div>
+</div>
+{%endblock%}
+{%block js%}
+<script src="auth.js">
+</script>
+{%endblock%}
